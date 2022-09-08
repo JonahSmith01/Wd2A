@@ -1,0 +1,149 @@
+body {
+    background-color: gray; 
+    font-size: xx-large;
+   
+
+}
+body {
+ <center>
+ display: flex;
+ </center>
+}
+
+button:hover{
+    
+}
+ button:  {
+    padding: 5vw;
+    background-color: teal;
+    border-radius: 30px;
+    margin: 5vw;
+
+}
+
+button:hover{
+    background-color: skyblue;
+    font-size: 50px;
+    color: purple;
+    }
+
+main {
+   
+    display:inline-flex;
+    margin: 1vw;
+        align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.p2 {
+    font-size: x-large;
+    -webkit-text-stroke-width:  2px;
+    -webkit-text-stroke-color: black;
+    
+
+    animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;    
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+}
+
+
+}
+
+.blink_text {
+  background: none;
+  color: white;
+  font-size: 30px;
+}
+
+.blink_img {
+  animation: blinker 2.5s linear infinite;
+  background: none;
+  display: inline-block;
+  margin: 3px;
+}
+
+.blink_img2 {
+  animation: blinker 1.9s linear infinite;
+  background: none;
+  display: inline-block;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+@keyframes blin {
+  50% { opacity: 0; }
+}
+
+.p3 {
+    font-size: x-large;
+    background-image: none;
+}
+
+#public {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    -webkit-text-stroke-width:  1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    line-height: 15%;
+    animation: up-down-motion2 12s linear infinite;
+    animation-direction: normal;
+  }
+  
+  #public:hover, #mass:hover {
+    font-size: 60px;
+  }
+
+  @keyframes up-down-motion2{
+    from{transform: translateY(-650px);}
+    to{transform: translateY(650px);}
+  }
+  
+  #mass {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    -webkit-text-stroke-width:  1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    right: 20%;
+    line-height: 15%;
+    animation: up-down-motion3 14s linear infinite;
+    animation-direction: normal;
+  }
+  
+  @keyframes up-down-motion3{
+    from{transform: translateY(650px);}
+    to{transform: translateY(-600px);}
+  }
+
+
+}
+
